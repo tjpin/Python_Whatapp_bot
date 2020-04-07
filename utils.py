@@ -3,7 +3,7 @@ import os
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "banking-fbgyxj-adb727018f28.json"
 # above line refers to path to your key.
-# GOOGLE_APPLICATION_CREDENTIALS should not be changed!
+# 'GOOGLE_APPLICATION_CREDENTIALS' is a reserved key statement(case sensitive) and should not be changed!
 
 
 dialogflow_session_client = dialogflow.SessionsClient()

@@ -12,7 +12,7 @@ def home_view():
 
 @app.route("/chats", methods=['POST'])
 def chats_reply():
-    """Respond to incoming calls with a simple text message."""
+    # Respond to incoming calls with a simple text message.
     # Find and read messages
     p_number = request.form.get('From')
     msg = request.form.get('Body')
