@@ -1,24 +1,24 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-from utils import fetch_reply
+from utils import find_response
 
 app = Flask(__name__)
 
-
+# Page view template........not that important, just to display something
 @app.route("/")
-def hello():
+def home_view():
     return "<h1> Welcome to whatsapp bot 2020 </h1>"
 
 
 @app.route("/chats", methods=['POST'])
-def sms_reply():
+def chats_reply():
     """Respond to incoming calls with a simple text message."""
-    # Fetch the message
-    msg = request.form.get('Body')
+    # Find and read messages
     p_number = request.form.get('From')
-    reply = fetch_reply(msg, p_number)
+    msg = request.form.get('Body')
+    reply = find_response(msg, p_number)
 
-    # Create reply
+    # Find response
 
     resp = MessagingResponse()
     resp.message(reply)
