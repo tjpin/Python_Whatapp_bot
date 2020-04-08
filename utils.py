@@ -7,7 +7,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "banking-fbgyxj-adb727018f28.json
 
 
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "banking-fbgyxj"  # special id from dialogflow config
+PROJECT_ID = "banking-1-tkdvrw"  # special id from dialogflow config
 
 
 def detect_intent_from_text(text, session_id, language_code='en'):
