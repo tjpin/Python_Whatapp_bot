@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\lazar\\Desktop\\devops\\flask_bot\\bot\\Scripts\\python.exe",
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.formatting.provider": "autopep8"
-}
