@@ -1,13 +1,13 @@
 import dialogflow_v2 as dialogflow
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "banking-fbgyxj-adb727018f28.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "your dialogflow key here"
 # above line refers to path to your key.
 # 'GOOGLE_APPLICATION_CREDENTIALS' is a reserved key statement(case sensitive) and should not be changed!
 
 
 dialogflow_session_client = dialogflow.SessionsClient()
-PROJECT_ID = "banking-1-tkdvrw"  # special id from dialogflow config
+PROJECT_ID = "your dialogflow project id"  # special id from dialogflow config
 
 
 def detect_intent_from_text(text, session_id, language_code='en'):
